@@ -18,9 +18,9 @@ public class Main {
         Connection conn = DriverManager.getConnection(url, props);    
 
         Statement st = conn.createStatement();
-        ResultSet rs = st.executeQuery("SELECT * FROM mytable WHERE columnfoo = 500");
+        ResultSet rs = st.executeQuery("SELECT * FROM mytable WHERE columnfoo = 500"); //TODO: add Quarry
         while (rs.next()) {
-        System.out.print("Column 1 returned ");
+        System.out.print("Column 1 returned "); // TODO: Add meaning
         System.out.println(rs.getString(1));
             }
         rs.close();
